@@ -19,6 +19,7 @@ function App() {
     <div className=" relative gradient text-white">  
     <Navbar />
     <Home />
+    <Home />
 
   <CustomCursor/>
 
