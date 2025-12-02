@@ -10,16 +10,23 @@ import Home from "./section/Home"
 import Project from "./section/Project"
 import { Skills } from "./section/Skills"
 import Testimonials from "./section/Testimonials"
-
+import React from "react"
 
 function App() {
  
 
-  return (
-    <div className=" relative gradient text-white">  
+
+  const [introDone, setIntroDone] =React.useState(false);
+
+
+  return (<>
+
+{!introDone && <IntroAnimation onFinish={() =>setIntroDone(true)} /> }
+{introDone && (
+    <div className=" relative gradient text-white " >  
     <Navbar />
     <Home />
-    <Home />
+    
 
   <CustomCursor/>
 
@@ -36,7 +43,7 @@ function App() {
 
     
     
-     <IntroAnimation />
+    
    
     
    
@@ -48,6 +55,8 @@ function App() {
    
      
     </div>
+    )}
+    </>
   )
 }
 
