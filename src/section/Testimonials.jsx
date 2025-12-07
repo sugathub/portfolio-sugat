@@ -73,7 +73,9 @@ const Testimonials = () => {
               “{t.review}”
             </p>
 
-            <h3 className="text-lg font-semibold">{t.name}</h3>
+            <h3 className="text-lg font-semibold">{t.name}
+              
+            </h3>
 
             <p className="text-sm text-gray-400 mt-1">{t.role}</p>
           </motion.div>
