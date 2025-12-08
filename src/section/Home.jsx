@@ -78,10 +78,11 @@ const Home = () => {
       <div className="absolute inset-0">
         <div
           className="absolute -top-32 -left-32
-          w-[70w] sm:h-[50vw] md:h-[40vw]
+          w-[70w] sm:w-[z-500vw] md:w-[40vw]
+          h-[70vw] sm:h-[50vw] md:h-[40vw]
           max-w-[500px] max-h-[500px]
           rounded-full
-          bg-gradient-to-r from-[#302b63] via-[#00bf8f] to-[#1cd8g2]
+          bg-gradient-to-r from-[#302b63] via-[#00bf8f] to-[#1cd8d2]
           opacity-30 sm:opacity-20 md:opacity-10
           blur-[100px] sm:blur-[130px] md:blur-[150px]
           animate-pulse"
@@ -89,20 +90,22 @@ const Home = () => {
 
         <div
           className="absolute bottom-0 right-0
-          w-[70w] sm:h-[50vw] md:h-[40vw]
+          w-[70w] sm:w-[z-500vw] md:w-[40vw]
+          h-[70vw] sm:h-[50vw] md:h-[40vw]
           max-w-[500px] max-h-[500px]
           rounded-full
-          bg-gradient-to-r from-[#302b63] via-[#00bf8f] to-[#1cd8g2]
+          bg-gradient-to-r from-[#302b63] via-[#00bf8f] to-[#1cd8d2]
           opacity-30 sm:opacity-20 md:opacity-10
           blur-[100px] sm:blur-[130px] md:blur-[150px]
+          animate-pulse
           animate-pulse delay-500"
         ></div>
       </div>
 
       {/* Content */}
-      <div className="relative z-10 h-full w-full max-w-7xl mx-out px-4 grid grid-cols-1 lg:grid-cols-2">
+      <div className="relative z-10 h-full w-full max-w-7xl mx-out px-4 grid grid-cols-1 lg:grid-cols-2  container mx-auto ">
         {/* LEFT SECTION */}
-        <div className="flex flex-col justify-center h-full text-center lg:text-left relative">
+        <div className="flex flex-col justify-center h-full text-center lg:text-left relative ">
           <div className="w-full lg:pr-24 mx-auto max-w-[48rem]">
             {/* Typewriter */}
             <motion.div
@@ -125,7 +128,7 @@ const Home = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1 }}
             >
-              Hello I'm
+              Hello, I'm
               <br />
               <span className="text-white font-bold text-5xl sm:text-6xl md:text-7xl lg:text-8xl lg:whitespace-nowrap">
                 Sugat Jamgade
