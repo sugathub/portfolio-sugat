@@ -1,9 +1,9 @@
 import React, { useEffect, useMemo, useRef, useState } from 'react'
-import img1 from "../assets/img1.JPG"
-import img2 from "../assets/img2.JPG"
-import img3 from "../assets/img3.JPG"
-import photo1 from "../assets/photo1.JPG"
-import photo2 from "../assets/photo2.PNG"
+import img1 from "../assets/img1.png"
+import img2 from "../assets/img2.png"
+import img3 from "../assets/img3.png"
+import photo1 from "../assets/photo1.png"
+import photo2 from "../assets/photo2.png"
 import photo3 from "../assets/photo3.png"
 
 import { motion, AnimatePresence, useMotionValueEvent, useScroll } from "framer-motion"
@@ -36,21 +36,21 @@ const Project = () => {
   const projects = useMemo(
     () => [
       {
-        title: "nk studio",
-        link: "https://www.nk.studio/",
+        title: "chat-App",
+        link: "https://chart-app-omega-five.vercel.app/",
         bgColor: "#0d4d3d",
         image: isMobile ? photo1 : img1,
       },
       {
-        title: "Gamily",
-        link: "https://gamilyapp.com/",
-        bgColor: "#3884d3",
+        title: "To-do-list",
+        link: "https://calculator-t2sr.vercel.app/",
+        bgColor: "#421264",
         image: isMobile ? photo2 : img2,
       },
       {
-        title: "Hungry Tiger",
-        link: "https://www.eathungrytiger.com/",
-        bgColor: "#dc9317",
+        title: "calculator",
+        link: "https://calculator-two-gamma-83.vercel.app/",
+        bgColor: "black",
         image: isMobile ? photo3 : img3,
       },
     ],

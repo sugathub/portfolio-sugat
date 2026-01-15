@@ -9,7 +9,8 @@ import {
   scale,
   transform,
 } from "framer-motion";
-import { FaGithub, FaXTwitter, FaLinkedin } from "react-icons/fa6";
+import { FaGithub, FaXTwitter, FaLinkedin,  FaInstagram } from "react-icons/fa6";
+import { TbBrandLeetcode } from "react-icons/tb";
 
 import avator from "../assets/avator.png";
 
@@ -25,7 +26,19 @@ const socials = [
     href: "https://www.linkedin.com/in/sugat-jamgade/",
   },
 
-  { Icon: FaGithub, label: "GitHub", href: "https://github.com/sugathub" },
+  { Icon: FaGithub, 
+    label: "GitHub",
+   href: "https://githb.com/sugathub" },
+
+    { Icon: FaInstagram, 
+    label: "Instagram",
+   href: "https://www.instagram.com/jmagdesugat/" },
+   
+    { Icon: TbBrandLeetcode, 
+    label: "Leetcode",
+   href: "https://leetcode.com/u/X63kIwLg7A/" },
+   
+
 ];
 
 // FIXED: removed unsupported "finally" & "transform" props

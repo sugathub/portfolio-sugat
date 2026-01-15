@@ -1,5 +1,6 @@
 import React from 'react'
-import { FaGithub, FaXTwitter, FaLinkedin } from "react-icons/fa6"
+import { FaGithub, FaXTwitter, FaLinkedin,FaInstagram } from "react-icons/fa6"
+import { TbBrandLeetcode } from "react-icons/tb";
 import { motion } from "framer-motion"
 
 const socials = [
@@ -18,6 +19,13 @@ const socials = [
     label: "GitHub",
     href: "https://github.com/sugathub",
   },
+     { Icon: FaInstagram, 
+      label: "Instagram",
+     href: "https://www.instagram.com/jmagdesugat/" },
+     
+      { Icon: TbBrandLeetcode, 
+      label: "Leetcode",
+     href: "https://leetcode.com/u/X63kIwLg7A/" },
 ]
 
 const glowVariants = {
