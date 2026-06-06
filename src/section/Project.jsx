@@ -40,7 +40,7 @@ const Project = () => {
     () => [
        {
         title: "URL Shortener",
-        link: "https://shorturl-sl97.onrender.com/url",
+        link: "https://shorturl-sl97.onrender.com/",
         bgColor: "#8341e7",
         image: isMobile ? photo1 : img1,
       },
