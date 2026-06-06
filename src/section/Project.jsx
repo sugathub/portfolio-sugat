@@ -2,9 +2,12 @@ import React, { useEffect, useMemo, useRef, useState } from 'react'
 import img1 from "../assets/img1.png"
 import img2 from "../assets/img2.png"
 import img3 from "../assets/img3.png"
+import img4 from "../assets/img4.png"
 import photo1 from "../assets/photo1.png"
 import photo2 from "../assets/photo2.png"
 import photo3 from "../assets/photo3.png"
+import photo4 from "../assets/photo4.png"
+
 
 import { motion, AnimatePresence, useMotionValueEvent, useScroll } from "framer-motion"
 
@@ -35,23 +38,29 @@ const Project = () => {
 
   const projects = useMemo(
     () => [
+       {
+        title: "URL Shortener",
+        link: "https://shorturl-sl97.onrender.com/url",
+        bgColor: "#8341e7",
+        image: isMobile ? photo1 : img1,
+      },
       {
         title: "chat-App",
         link: "https://chart-app-omega-five.vercel.app/",
         bgColor: "#0d4d3d",
-        image: isMobile ? photo1 : img1,
+        image: isMobile ? photo2 : img2,
       },
       {
         title: "To-do-list",
         link: "https://calculator-t2sr.vercel.app/",
         bgColor: "#421264",
-        image: isMobile ? photo2 : img2,
+        image: isMobile ? photo3 : img3,
       },
       {
         title: "calculator",
         link: "https://calculator-two-gamma-83.vercel.app/",
         bgColor: "black",
-        image: isMobile ? photo3 : img3,
+        image: isMobile ? photo4 : img4,
       },
     ],
     [isMobile]
